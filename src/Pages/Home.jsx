@@ -1,10 +1,12 @@
 import React from 'react';
 import '../App.css';
 import './Home.css';
+import Timer from '../Components/Timer';
 
 function Home({ onBegin }) {
   return (
     <div className="home-root">
+      <Timer />
       <header className="home-header">
         <h1 className="neon-title text">OSC's Epic Workout App</h1>
         <p className="neon-subtitle text">Lock in. Gain aura. Save money.</p>
