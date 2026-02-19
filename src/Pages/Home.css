@@ -17,6 +17,52 @@
   box-sizing:border-box;
 }
 
+.workout-timer{
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 230px;
+  z-index: 1000;
+  background: linear-gradient(180deg, rgba(2, 16, 38, 0.95), rgba(0, 0, 0, 0.95));
+  border: 1px solid rgba(0, 224, 138, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(0, 224, 138, 0.2);
+  padding: 0.8rem;
+}
+
+.timer-title{
+  margin: 0 0 0.45rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.timer-display{
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Courier New", monospace;
+  margin-bottom: 0.65rem;
+}
+
+.timer-actions{
+  display: flex;
+  gap: 0.4rem;
+}
+
+.timer-button{
+  flex: 1;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 0.25rem;
+  font-size: 0.75rem;
+}
+
+.timer-start{ background: #129f49; }
+.timer-stop{ background: #c51f3f; }
+.timer-restart{ background: #2272d8; }
+
 .home-header{ text-align:center; margin-bottom:1.5rem; }
 .neon-title{ font-size:2rem; margin:0; color:#ffffff; text-shadow:0 0 8px rgba(0,168,255,0.9),0 0 18px rgba(255,30,75,0.35); }
 .neon-subtitle{ margin:0.4rem 0 0; color:rgba(20, 235, 5, 0.8); }
@@ -69,6 +115,22 @@
 .home-footer{ margin-top:1.5rem; color:rgba(200,220,255,0.5); text-align:center; }
 
 @media (max-width:720px){
+  .workout-timer{
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 185px;
+    padding: 0.65rem;
+  }
+
+  .timer-display{
+    font-size: 1.3rem;
+  }
+
+  .timer-button{
+    font-size: 0.7rem;
+    padding: 0.35rem 0.2rem;
+  }
+
   .links-grid{ flex-direction:column; align-items:center;  }
   .begin-card{ flex: none; width:100%; margin-left: auto,}
 }
